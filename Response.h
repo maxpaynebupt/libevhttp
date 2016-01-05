@@ -11,7 +11,7 @@
 #include "libev.h"
 #include <vector>
 #include "Request.h"
-#include <ext/hash_map>
+#include <hash_map>
 #include <string>
 #include "KeyValues.h"
 #include "Config.h"

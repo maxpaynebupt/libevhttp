@@ -9,7 +9,7 @@
 #define	CLEANERTIMER_H
 
 #include <vector>
-#include <ext/hash_set>
+#include <hash_set>
 #include "libev.h"
 #include "resources.h"
 #include "ICleaner.h"

@@ -48,8 +48,8 @@
 MKDIR=mkdir
 CP=cp
 CCADMIN=CCadmin
-LDFLAGS=-levhttp -lev
-LIBS =  -levhttp
+#LDFLAGS= -levhttp -lev
+LIBS = -levhtp -lev
 # -lrt
 
 # build

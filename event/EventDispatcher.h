@@ -8,7 +8,7 @@
 #ifndef EVENTDISPATCHER_H_
 #define EVENTDISPATCHER_H_
 
-#include <ext/hash_map>
+#include <hash_map>
 #include "Event.h"
 #include "IEventDispatcher.h"
 

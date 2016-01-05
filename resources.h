@@ -13,7 +13,8 @@
 //#define LOG_LEVEL LOG_ERROR_LEVEL
 #define LOG_LEVEL LOG_WARN_LEVEL
 
-#include <ext/hash_map>
+using   namespace   std;
+#include <hash_map>
 #include <string.h>
 #include <netinet/in.h>
 #include <unistd.h>

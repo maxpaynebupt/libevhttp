@@ -51,7 +51,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-levhttp -lev
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}

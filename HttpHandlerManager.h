@@ -10,7 +10,7 @@
 
 #include "resources.h"
 #include "libev.h"
-#include <ext/hash_set>
+#include <hash_set>
 #include "http_1.1/Http11HandlerFactory.h"
 #include "ICleaner.h"
 #include "HttpHandler.h"

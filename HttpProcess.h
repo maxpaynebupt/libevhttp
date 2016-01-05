@@ -9,7 +9,7 @@
 #define	_HTTPPROCESS_H
 
 #include "libev.h"
-#include <ext/hash_map>
+#include <hash_map>
 #include <queue>
 
 #include "resources.h"

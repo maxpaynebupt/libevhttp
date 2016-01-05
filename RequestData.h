@@ -8,7 +8,7 @@
 #ifndef _REQUESTDATA_H
 #define	_REQUESTDATA_H
 #include <vector>
-#include <ext/hash_map>
+#include <hash_map>
 #include <string>
 #include <iostream>
 #include <netinet/in.h>

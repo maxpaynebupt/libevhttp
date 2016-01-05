@@ -98,10 +98,11 @@ EVHTTPD_CPP = \
  ProcessSignal.cpp \
  Timer.cpp 
 
-LDFLAGS=-lev -lrt
 AUTOMAKE_OPTIONS=foreign
 #RANLIB=ranlib
 LIBTOOL=libtool
+LDFLAGS=-lev -lrt -Wno-deprecated
+CXXFLAGS += -Wno-deprecated
 
 #bin_PROGRAMS=evhttp
 #evhttp_SOURCES= ${EVHTTPD_H} ${EVHTTPD_CPP} 

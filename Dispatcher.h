@@ -12,7 +12,7 @@
 #include "libev.h"
 #include <vector>
 #include <queue>
-#include <ext/hash_map>
+#include <hash_map>
 #include "Process.h"
 #include "HttpProcess.h"
 #include "resources.h"

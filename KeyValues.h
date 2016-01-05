@@ -9,7 +9,7 @@
 #define	_KEYVALUES_H
 
 #include <vector>
-#include <ext/hash_map>
+#include <hash_map>
 #include <string>
 #include <iostream>
 #include "resources.h"

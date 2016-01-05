@@ -9,8 +9,8 @@
 #define	MEMORYPOOL_H
 #include "resources.h"
 #include <sys/types.h>
-#include <ext/hash_map>
-#include <ext/hash_set>
+#include <hash_map>
+#include <hash_set>
 #include <stdlib.h>
 
 /**
