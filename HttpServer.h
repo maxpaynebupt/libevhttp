@@ -12,7 +12,7 @@
 #include <vector>
 #include <netinet/in.h>
 #include "resources.h"
-#include "Config.h"
+#include "Conf.h"
 #include "Dispatcher.h"
 #include "HttpServlet.h"
 #include "HttpHandlerFactory.h"
@@ -51,33 +51,33 @@ public:
      * 
      * @param port 监听端口
      * @param servletFactory HttpServlet工厂，通过servletFactory来创建处理HTTP请求的HttpServlet
-     * @param config 配置HTTP服务
+     * @param conf 配置HTTP服务
      */
-    HttpServer(unsigned short int port, HttpServletFactory* servletFactory, Config* config = NULL);
+    HttpServer(unsigned short int port, HttpServletFactory* servletFactory, Conf* conf = NULL);
     
     /**
      * 
      * @param port 监听端口
      * @param servlet 指定一个HttpServlet来处理HTTP请求
-     * @param config 配置HTTP服务
+     * @param conf 配置HTTP服务
      */
-    HttpServer(unsigned short int port, HttpServlet* servlet, Config* config = NULL);
+    HttpServer(unsigned short int port, HttpServlet* servlet, Conf* conf = NULL);
     
     /**
      * 
      * @param address 服务绑定地址
      * @param servletFactory servletFactory HttpServlet工厂，通过servletFactory来创建处理HTTP请求的HttpServlet
-     * @param config 配置HTTP服务
+     * @param conf 配置HTTP服务
      */
-    HttpServer(sockaddr_in* address, HttpServletFactory* servletFactory, Config* config = NULL);
+    HttpServer(sockaddr_in* address, HttpServletFactory* servletFactory, Conf* conf = NULL);
     
     /**
      * 
      * @param address 服务绑定地址
      * @param servlet servletFactory HttpServlet工厂，通过servletFactory来创建处理HTTP请求的HttpServlet
-     * @param config 配置HTTP服务
+     * @param conf 配置HTTP服务
      */
-    HttpServer(sockaddr_in* address, HttpServlet* servlet, Config* config = NULL);
+    HttpServer(sockaddr_in* address, HttpServlet* servlet, Conf* conf = NULL);
     virtual ~HttpServer();
 
     /** 启动Http服务 */
@@ -126,8 +126,8 @@ private:
     ev::io evioSocket;
     ev::io* evioSocketPt;
     
-    Config* config;
-    Config defaultConfig;
+    Conf* conf;
+    Conf defaultConf;
     
 private:
     void init();

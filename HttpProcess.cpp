@@ -28,7 +28,7 @@ using namespace std;
 
 HttpProcess::HttpProcess(Dispatcher* dispatcher): 
         activeHandlerCount(0), totalRequestCount(0), httpHandlerCount(0),
-        dispatcher(dispatcher), httpServer(NULL), evioSocket(NULL), config(NULL), 
+        dispatcher(dispatcher), httpServer(NULL), evioSocket(NULL), conf(NULL), 
         parentEvioStarted(false){
         
 }
@@ -131,7 +131,7 @@ bool HttpProcess::handleMessageInParent(ProcessMessage_t* message){
     switch(message->type){
         case MSG_TYPE_QUERY_ACTIVE_HANDLERS:
             if(message->length != INT_SIZE){
-                LOG_WARN("MSG_TYPE_QUERY_ACTIVE_HANDLERS, getpid:%d, rsize:%d", getpid(), message->length)
+                LOG_WARN("MSG_TYPE_QUERY_ACTIVE_HANDLERS, getpid:%d, rsize:%d", getpid(), message->length);
             }else{
                 activeHandlerCount = *((int*)message->data);
                 return true;
@@ -139,7 +139,7 @@ bool HttpProcess::handleMessageInParent(ProcessMessage_t* message){
             break;
         case MSG_TYPE_QUERY_HTTP_HANDLERS:
             if(message->length != INT_SIZE){
-                LOG_WARN("MSG_TYPE_QUERY_HTTP_HANDLERS, getpid:%d, rsize:%d", getpid(), message->length)
+                LOG_WARN("MSG_TYPE_QUERY_HTTP_HANDLERS, getpid:%d, rsize:%d", getpid(), message->length);
             }else{             
                 httpHandlerCount = *((int*)message->data);
                 return true;
@@ -147,7 +147,7 @@ bool HttpProcess::handleMessageInParent(ProcessMessage_t* message){
             break;
         case MSG_TYPE_QUERY_TOTAL_REQUESTS:
             if(message->length != LONG_SIZE){
-                LOG_WARN("MSG_TYPE_QUERY_TOTAL_REQUESTS, getpid:%d, rsize:%d", getpid(), message->length)
+                LOG_WARN("MSG_TYPE_QUERY_TOTAL_REQUESTS, getpid:%d, rsize:%d", getpid(), message->length);
             }else{              
                 totalRequestCount = *((long*)message->data);
                 return true;
@@ -188,7 +188,7 @@ void HttpProcess::fdReadCallback(ev::io &evio, int revents){
         }
         return;
     }
-    LOG_DEBUG("recvFD:%d", fd)
+    LOG_DEBUG("recvFD:%d", fd);
     SocketUtils::setNonblock(fd);
     HttpHandler* handler = HttpHandlerManager::instance.get(this, fd);
     
@@ -208,7 +208,7 @@ int HttpProcess::run(void* param /* =NULL */){
     signal(SIGPIPE, SIG_IGN);
     
     //初始化
-    HttpHandlerManager::init(config->handlerFactory, config->poolMaxHttpHandlerCount);
+    HttpHandlerManager::init(conf->handlerFactory, conf->poolMaxHttpHandlerCount);
     HttpServletManager::init(httpServer->getHttpServletFactory());
     
     //使用libev框架监听Socket事件

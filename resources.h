@@ -11,14 +11,14 @@
 //#define LOG_LEVEL LOG_DEBUG_LEVEL
 //#define LOG_LEVEL LOG_INFO_LEVEL
 //#define LOG_LEVEL LOG_ERROR_LEVEL
-#define LOG_LEVEL LOG_WARN_LEVEL
+//#define LOG_LEVEL LOG_WARN_LEVEL
 
 using   namespace   std;
 #include <hash_map>
 #include <string.h>
 #include <netinet/in.h>
 #include <unistd.h>
-#include "log.h"
+#include "logger.h"
 
 /** 定义主进程与子进程间的交互消息类型, 宽度：一个字节, 
  * 100以内的消息类型为系统保留，100以上可以用户自定义使用 */
@@ -64,6 +64,8 @@ static const unsigned int INT_SIZE = sizeof(int);
 
 //int类型值宽度
 static const unsigned int LONG_SIZE = sizeof(long);
+
+//static const int a=initlog();
 
 ////向子进程发送FD失败且errno为EAGAIN时尝试重复发送FD最多次数
 //#define EAGAIN_SEND_FD_MAX_TIMES 30

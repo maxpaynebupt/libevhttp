@@ -13,7 +13,6 @@
 #include <sys/file.h>
 #include <string.h>
 #include <errno.h>
-#include <evhttp/log.h>
 #include <evhttp/HttpServlet.h>
 
 

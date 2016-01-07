@@ -136,7 +136,7 @@ bool Http10Handler::isChunkedTransferEncoding(){
 bool Http10Handler::onReadEvent(unsigned int n){
     //检查请求长度是否合法, 当还没成功读完请求行时，数据长度已经大于了约定长度时
     //认为此请求非法
-    if(!requestData.existReqLine && requestData.data.size() > httpProcess->config->requestLineMaxBytes){ //REQUEST_LINE_MAX_BYTES
+    if(!requestData.existReqLine && requestData.data.size() > httpProcess->conf->requestLineMaxBytes){ //REQUEST_LINE_MAX_BYTES
         //如果请求行大于REQUEST_LINE_MAX_BYTES字节
         httpCode = HTTP_CODE_414;
         LOG_WARN("httpCode:%d, request line oversize", httpCode);

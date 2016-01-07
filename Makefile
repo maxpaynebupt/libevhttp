@@ -130,7 +130,7 @@ am__installdirs = "$(DESTDIR)$(libdir)" \
 LTLIBRARIES = $(lib_LTLIBRARIES)
 libevhttp_la_LIBADD =
 am__objects_1 =
-am__objects_2 = AbstractIOPump.lo ChunkedBodyBuilder.lo \
+am__objects_2 = logger.lo AbstractIOPump.lo ChunkedBodyBuilder.lo \
 	CleanerTimer.lo Dispatcher.lo EventDispatcher.lo \
 	EvNIOReader.lo EvNIOWriter.lo HttpHandler.lo \
 	HttpHandlerFactory.lo HttpHandlerManager.lo HttpProcess.lo \
@@ -277,7 +277,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LDFLAGS = -lev -lrt -Wno-deprecated
+LDFLAGS = -lev -lrt -llog4cplus -Wno-deprecated
 LIBOBJS = 
 LIBS = -lev 
 LTLIBOBJS = 
@@ -345,7 +345,7 @@ EVHTTPD_H = \
  AbstractIOWriter.h \
  ChunkedBodyBuilder.h \
  CleanerTimer.h \
- Config.h \
+ Conf.h \
  Dispatcher.h \
  events.h \
  evhttp.h \
@@ -367,7 +367,7 @@ EVHTTPD_H = \
  IIOWriter.h \
  IRunnable.h \
  KeyValues.h \
- log.h \
+ logger.h \
  MemoryPool.h \
  Process.h \
  ProcessFDSender.h \
@@ -401,6 +401,7 @@ EVHTTPD_HTTP11_H = \
  http_1.1/Http11HandlerFactory.h 
 
 EVHTTPD_CPP = \
+ logger.cpp \
  AbstractIOPump.cpp \
  ChunkedBodyBuilder.cpp \
  CleanerTimer.cpp \
@@ -584,6 +585,7 @@ include ./$(DEPDIR)/SocketNIOWriter.Plo
 include ./$(DEPDIR)/SocketUtils.Plo
 include ./$(DEPDIR)/StringUtils.Plo
 include ./$(DEPDIR)/Timer.Plo
+include ./$(DEPDIR)/logger.Plo
 
 .cpp.o:
 	$(AM_V_CXX)$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

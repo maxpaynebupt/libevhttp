@@ -49,7 +49,7 @@ MKDIR=mkdir
 CP=cp
 CCADMIN=CCadmin
 #LDFLAGS= -levhttp -lev
-LIBS = -levhtp -lev
+LIBS = -levhtp -lev -lpthread -llogc4plus
 # -lrt
 
 # build

@@ -14,7 +14,7 @@
 #include <hash_map>
 #include <string>
 #include "KeyValues.h"
-#include "Config.h"
+#include "Conf.h"
 #include "MemoryPool.h"
 #include "SendfileIOPump.h"
 
@@ -25,7 +25,7 @@ class HttpHandler;
 class Response {
     friend class HttpHandler;
 public:
-    Response(HttpHandler& httpHandler, Request& request, Config* config);
+    Response(HttpHandler& httpHandler, Request& request, Conf* conf);
     virtual ~Response();
 
     /** 新增或追加响应头, 多个值以:" ,"号分隔 */

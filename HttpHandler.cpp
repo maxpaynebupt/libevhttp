@@ -40,10 +40,10 @@ HttpHandler::~HttpHandler() {
 
 void HttpHandler::init(HttpProcess* p, FD fd){
     if(!readBuff){
-        readBuff = (char*)MemoryPool::instance.malloc(p->config->requestBufferSize);
+        readBuff = (char*)MemoryPool::instance.malloc(p->conf->requestBufferSize);
     }
     if(!response){
-        response = new Response(*this, request, p->config);
+        response = new Response(*this, request, p->conf);
     }
     
     this->status = NEW;
@@ -108,7 +108,7 @@ void HttpHandler::startTimeoutEv(){
         if(evtimer.is_active()){
             evtimer.stop();
         }
-        evtimer.start(httpProcess->config->idleTimeout, 0);
+        evtimer.start(httpProcess->conf->idleTimeout, 0);
     }
 }
 
@@ -534,7 +534,7 @@ void HttpHandler::handleReadCompletionEvent(IOReadCompletionEvent* e){
  * 处理写完成事件
  */
 void HttpHandler::handleWriteCompletionEvent(IOWriteCompletionEvent* e){
-    LOG_DEBUG("e.length:%d, iowriter.waitingQueueSize():%d, status:%d", e->length, iowriter.waitingQueueSize(), status)
+    LOG_DEBUG("e.length:%d, iowriter.waitingQueueSize():%d, status:%d", e->length, iowriter.waitingQueueSize(), status);
             
     if(e->length < 0){
         //LOG_WARN("error, e->length:%d", e->length);
@@ -575,7 +575,7 @@ void HttpHandler::handleWriteCompletionEvent(IOWriteCompletionEvent* e){
 bool HttpHandler::prepareRead(){
     if(isClosed())return false;
     startTimeoutEv();
-    return ioreader.read(readBuff, httpProcess->config->requestBufferSize);
+    return ioreader.read(readBuff, httpProcess->conf->requestBufferSize);
 }
 
 //暂停读Socket数据
@@ -595,7 +595,7 @@ void HttpHandler::stopWrite(){
 }
 
 bool HttpHandler::handle(const Event* e){
-    LOG_DEBUG("e->getType():%d", e->getType())
+    LOG_DEBUG("e->getType():%d", e->getType());
     switch(e->getType()){
         case EVENT_TYPE_IO_READ_COMPLETION:
             handleReadCompletionEvent((IOReadCompletionEvent*)e);

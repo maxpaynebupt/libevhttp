@@ -15,15 +15,15 @@
 #include "Response.h"
 #include "HttpHandler.h"
 #include "SocketUtils.h"
-#include "Config.h"
+#include "Conf.h"
 #include "MemoryPool.h"
 #include "SendfileIOPump.h"
 
 using namespace std;
 
-Response::Response(HttpHandler& httpHandler, Request& request, Config* config):httpHandler(httpHandler), request(request),
+Response::Response(HttpHandler& httpHandler, Request& request, Conf* conf):httpHandler(httpHandler), request(request),
         status(0), msg("OK"), headerLength(0), headerWriteFlag(false), isChunkedTransferEncoding(false),
-        contentLength(-1), bufferSize(config->responseBufferSize), bufferPointer(0), buffer(NULL), asynAnswerMode(false)
+        contentLength(-1), bufferSize(conf->responseBufferSize), bufferPointer(0), buffer(NULL), asynAnswerMode(false)
 {
         buffer = (char*)MemoryPool::instance.malloc(bufferSize);
 }

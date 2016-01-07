@@ -15,14 +15,14 @@
 
 #include <iostream>
 #include "Dispatcher.h"
-#include "Config.h"
+#include "Conf.h"
 #include "HttpServer.h"
 #include "CleanerTimer.h"
 #include "SocketUtils.h"
 
 using namespace std;
 
-Dispatcher::Dispatcher():httpServer(NULL), evioSocket(NULL), config(NULL), processCount(0){
+Dispatcher::Dispatcher():httpServer(NULL), evioSocket(NULL), conf(NULL), processCount(0){
 
 }
 
@@ -35,7 +35,7 @@ Dispatcher::~Dispatcher() {
 
 bool Dispatcher::start(){
     CleanerTimer::instance.add(this);
-    return createProcess(config->workProcessCount) == config->workProcessCount;
+    return createProcess(conf->workProcessCount) == conf->workProcessCount;
 }
 
 int Dispatcher::createProcess(int n){
@@ -45,9 +45,9 @@ int Dispatcher::createProcess(int n){
         HttpProcess* p = new HttpProcess(this);
         p->httpServer = httpServer;
         p->evioSocket = evioSocket;
-        p->config = config;
-        if(config->eventListener){
-            p->addListener(config->eventListener); //添加事件监听器
+        p->conf = conf;
+        if(conf->eventListener){
+            p->addListener(conf->eventListener); //添加事件监听器
         }
         if(!p->start()){
             delete p;
@@ -96,8 +96,8 @@ void Dispatcher::cleanup(){
 
 //@TODO 返回一个空闲进程，以后可以改为更快速的算法来查找空闲进程，当前这样用着
 HttpProcess* Dispatcher::getIdleProcess(){
-    if(allProcesses.size() < config->workProcessCount){
-        createProcess(config->workProcessCount-allProcesses.size());
+    if(allProcesses.size() < conf->workProcessCount){
+        createProcess(conf->workProcessCount-allProcesses.size());
     }
     if(allProcesses.empty()){
         LOG_ERROR("have not idle process");

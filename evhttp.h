@@ -11,7 +11,7 @@
 #include "resources.h"
 #include "events.h"
 #include "libev.h"
-#include "log.h"
+#include "logger.h"
 
 #include "AbstractIOPump.h"
 #include "AbstractIOReader.h"
@@ -44,7 +44,7 @@
 #include "StringUtils.h"
 #include "CleanerTimer.h"
 #include "Dispatcher.h"
-#include "Config.h"
+#include "Conf.h"
 #include "ProcessSignal.h"
 #include "Timer.h"
 

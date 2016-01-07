@@ -6,7 +6,7 @@
  */
 
 #include "Timer.h"
-#include "log.h"
+#include "logger.h"
 
 
 Timer::Timer():timerEvent(this) {

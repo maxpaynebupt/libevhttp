@@ -7,7 +7,7 @@ EVHTTPD_H= \
  AbstractIOWriter.h \
  ChunkedBodyBuilder.h \
  CleanerTimer.h \
- Config.h \
+ Conf.h \
  Dispatcher.h \
  events.h \
  evhttp.h \
@@ -29,7 +29,7 @@ EVHTTPD_H= \
  IIOWriter.h \
  IRunnable.h \
  KeyValues.h \
- log.h \
+ logger.h \
  MemoryPool.h \
  Process.h \
  ProcessFDSender.h \
@@ -65,6 +65,7 @@ EVHTTPD_HTTP11_H= \
 
 
 EVHTTPD_CPP = \
+ logger.cpp \
  AbstractIOPump.cpp \
  ChunkedBodyBuilder.cpp \
  CleanerTimer.cpp \
@@ -101,7 +102,7 @@ EVHTTPD_CPP = \
 AUTOMAKE_OPTIONS=foreign
 #RANLIB=ranlib
 LIBTOOL=libtool
-LDFLAGS=-lev -lrt -Wno-deprecated
+LDFLAGS=-lev -lrt -llog4cplus -Wno-deprecated
 CXXFLAGS += -Wno-deprecated
 
 #bin_PROGRAMS=evhttp

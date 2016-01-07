@@ -51,7 +51,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS= -levhttp -lev
+LDLIBSOPTIONS= -static -levhttp -llog4cplus  -lpthread -lev -lcfgparser -ldbglog
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}

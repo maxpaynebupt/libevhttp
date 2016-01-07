@@ -35,7 +35,7 @@ void* MemoryPool::realloc(void* ptr, size_t size){
  */
 void MemoryPool::free(void* ptr){
     if(!ptr){
-        LOG_ERROR("is NULL")
+        LOG_ERROR("is NULL");
         return;
     }
     ::free(ptr);
@@ -64,7 +64,7 @@ void* MemoryPool::Group::malloc(size_t size){
  */
 void MemoryPool::Group::free(void* ptr){
     if(!ptr){
-        LOG_ERROR("Group, ptr is NULL")
+        LOG_ERROR("Group, ptr is NULL");
         return;
     }    
     MemoryPtrs::iterator it = memoryPtrs.find(ptr);
@@ -72,7 +72,7 @@ void MemoryPool::Group::free(void* ptr){
         memoryPtrs.erase(it);
         MemoryPool::instance.free(ptr);
     }else{
-        LOG_ERROR("Group, the ptr not in Group")
+        LOG_ERROR("Group, the ptr not in Group");
     }
 }
 

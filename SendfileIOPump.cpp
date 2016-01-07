@@ -83,7 +83,7 @@ void SendfileIOPump::reset(){
 void SendfileIOPump::startSendfileTimer(){
     if(!isRunning()) return;
     if(eagainCount > 5){
-        LOG_DEBUG("eagainCount:%d, timeoutInterval:%f,  calInterval:%f", eagainCount, timeoutInterval, (timeoutInterval + eagainCount * eagainCount * timeoutInterval))
+        LOG_DEBUG("eagainCount:%d, timeoutInterval:%f,  calInterval:%f", eagainCount, timeoutInterval, (timeoutInterval + eagainCount * eagainCount * timeoutInterval));
     }
     sendfiletimer.start(eagainCount>0?(timeoutInterval + eagainCount * eagainCount * timeoutInterval):timeoutInterval, 0);
 }        

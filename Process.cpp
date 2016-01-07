@@ -321,7 +321,7 @@ void Process::notifyClose(){
  * 向子进程或父进程发送消息
  */
 bool Process::sendMessage(MSG_TYPE msg, void* buff, unsigned int n){
-    LOG_DEBUG("msg:%d, n:%d", msg, n)
+    LOG_DEBUG("msg:%d, n:%d", msg, n);
     sendedMessage.type = msg;
     sendedMessage.pid = getpid();
     sendedMessage.length = n;
@@ -345,12 +345,12 @@ bool Process::sendMessage(ProcessMessage_t* msg){
     }
     LOG_DEBUG("type:%d, length:%d", msg->type, msg->length);
     if(!msgIOWriter.write((const char*)msg, sizeof(ProcessMessage_t))){
-        LOG_WARN("send message error, msg:%d, n:%d, errno:%d", msg->type, msg->length, errno)
+        LOG_WARN("send message error, msg:%d, n:%d, errno:%d", msg->type, msg->length, errno);
         return false;
     }
     if(msg->data && msg->length > 0){
         if(!msgIOWriter.write((const char*)msg->data, msg->length)){
-            LOG_WARN("send message data error, n:%d, errno:%d", msg->length, errno)
+            LOG_WARN("send message data error, n:%d, errno:%d", msg->length, errno);
             return false;
         }
     }

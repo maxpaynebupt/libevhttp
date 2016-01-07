@@ -16,7 +16,7 @@
 #include "Process.h"
 #include "HttpProcess.h"
 #include "resources.h"
-#include "Config.h"
+#include "Conf.h"
 #include "ICleaner.h"
 
 
@@ -85,8 +85,8 @@ public:
     HttpServer* httpServer;
     /** 指向监听Socket的ev::io */
     ev::io** evioSocket;
-    /** 指向Config */
-    Config* config;
+    /** 指向Conf */
+    Conf* conf;
     
 private:
     //定义进程容器类型

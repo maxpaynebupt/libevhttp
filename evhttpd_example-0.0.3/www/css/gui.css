@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 50px;
+    margin-top: 0px;
+}
+
+.ui-layout-south {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.console-container {
+    overflow: auto;
+}
+
+#vmlist ul {
+    margin: 0;
+    padding: 0;
+}
+
+#vmlist li {
+    list-style-type: none;
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 1px 0px 1px 0px;
+}
+
+#vmlist li li {
+//    margin-right: 100px;
+}
+
+.expandable .expander {
+    cursor: move;
+}
+
+.expandable {
+    cursor: pointer;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.nodes .expandable {
+/*
+    background-color: #00a9d4;
+    border: 1px solid #5fbadd;
+ */
+/*
+    background-color: #89ba17;
+    border: 2px solid #a5c753;
+*/
+    background-color: #c3c5d9;
+    border: 2px solid #8d92b4;
+}
+
+/*
+.nodes .exphead {
+    font-weight: bold;
+}
+*/
+
+.vms .expandable {
+/*
+    background-color: #89ba17;
+    border: 1px solid #a5c753;
+*/
+/*
+    background-color: #00a9d4;
+    border: 2px solid #5fbadd;
+*/
+    background-color: #e1e2e3;
+    border: 2px solid #d1d2d4;
+}
+
+.vminfo {
+    color: #b1b3b4;
+}
+
+.console {
+    /* TODO: margin, etc. do not work right */
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: auto;
+    font-family: Courier New, Courier, fixed;
+    font-size: 0.8em;
+    color: #b1b3b4;
+    background-color: #f0f1f1;
+}
+
+.console p {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+.console p:nth-child(odd) {
+    background-color: #f0f1f1;
+}
+
+.console p:nth-child(even) {
+    background-color: #e1e2e3;
+}
+*/
+.console_debug, .console_sdebug {
+    color: #b1b3b4;
+}
+.console_info {
+    color: #00285f;
+}
+.console_error, .console_serror {
+    color: #e32119;
+}
+.console_sinfo {
+    color: #00625f;
+}
+.console_xsent {
+    color: #7b0663;
+}
+.console_xrecv {
+    color: #000000;
+}
+
+.console-controls {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 400px;
+    height: 36px;
+    border: 1px solid #b1b3b4;
+    background-color: #e1e2e3;
+}
+
+.test {
+    background-color: #fabb00 !important;
+}
+
+.working {
+    background-color: #badeee !important;
+    background-image: url('ajax-loader-blue.gif');
+    background-repeat: no-repeat;
+    background-position: 190px 6px;
+}
+
+.working .vminfo {
+    color: #00a9d4;
+}
+
+.workdone {
+    background-color: #e1e2e3;
+}
+
+.ui-slider-horizontal {
+    width: 200px;
+}
+
+#node-info table {
+    border-collapse: collapse;
+}
+
+#node-info table, #node-info td, #node-info th {
+    border: 1px dotted #d1d2d4;
+    text-align: center;
+}
+
+#node-load table {
+    border-collapse: collapse;
+}
+
+#loadgraph {
+    width: 600px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#loadtps {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+
+#loadtps table td {
+    padding: 4px;
+}
+
+.tpwrap {
+    width: 32px;
+    height: 300px;
+    padding-top: 15px;
+}
+
+.tpbar {
+    margin: auto;
+    width: 20px;
+    height: 270px;
+    border: 1px dotted #d1d2d4;
+}
+
+.tpfilltop {
+    width: 100%;
+}
+
+.tpfillbot {
+    width: 100%;
+    background-color: #00a9d4;
+}
+
+.tpfilloff {
+    width: 100%;
+    background-color: #e1e2e4;
+}
+
+.tplabel {
+    font-size: 9px;
+    text-align: center;
+}
+
+#tabs ul.ui-widget-header {
+    background: #00285F url("/images/ericsson-logo-42w.gif") no-repeat top right;
+}

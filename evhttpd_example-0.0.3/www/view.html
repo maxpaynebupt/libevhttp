@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Cloud Management - Tenant view</title>
+  <link type="text/css" href="css/ericsson-theme/jquery-ui-1.9.1.custom.css" rel="stylesheet" />	
+  <link type="text/css" href="css/demo.css" rel="stylesheet" />	
+  <link rel="icon" type="image/gif" href="css/cloud-16x16.gif" />
+  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.9.1.custom.min.js"></script>
+  <script type="text/javascript" src="js/jquery-layout-1.3.0.rc30.62.min.js"></script>
+  <script type="text/javascript" src="js/jquery.flot.min.js"></script>
+  <script type="text/javascript" src="js/jquery.flot.resize.min.js"></script>
+  <script type="text/javascript" src="js/jquery.flot.time.min.js"></script>
+  <script type="text/javascript" src="portal.js"></script>
+  <style type="text/css">
+    body { font-family: Arial, Helvetica, sans-serif; }
+  </style>
+</head>
+
+<body>
+<div class="ui-layout-center">
+  <div id="tabs">
+    <ul>
+      <li><a href="#node-info"><span>Info</span></a></li>
+      <li><a href="#node-load"><span>Load</span></a></li>
+      <li><a href="#node-other"><span>Other</span></a></li>
+    </ul>
+    <div id="node-info">
+      <p><img src="images/loading-indic-16x16-00285f.gif"> Loading...</p>
+    </div>
+    <div id="node-load">
+      <p><b>MSC-S BC Load</b> as percentage of virtual blade capacity</p>
+      <div id="loadgraph" style="width:850px;height:300px;"><img src="images/loading-indic-16x16-00285f.gif"> Loading...</div>
+      <p>High threshold: <input id="highload" type="text" value="100" style="text-align: right; width:2em"> %</p>
+      <p>Low threshold: <input id="lowload" type="text" value="0" style="text-align: right; width:2em"> %</p>
+      <p>Update load every <input id="updateInterval" type="text" value="1000" style="text-align: right; width:5em"> milliseconds</p>
+      <p>Display load for the last <input id="graphPeriod" type="text" value="10" style="text-align: right; width:2em"> minutes</p>
+    </div>
+    <div id="node-other">
+      <p>Load generator <b>TitanSim 1</b>. Target load: <b><span id="titan1">250</span></b> calls per second. <span id="cmdpause1"></span> <span id="cmdrestart1"></span></p>
+      <p>Load generator <b>TitanSim 2</b>. Target load: <b><span id="titan2">350</span></b> calls per second. <span id="cmdpause2"></span> <span id="cmdrestart2"></span></p>
+    </div>
+
+  </div>
+<!--
+  <p class="ui-state-error" style="padding: 20px;"><span class="ui-icon ui-icon-alert" style="float: left; margin-right: 5px;"></span><span class="ui-state-error-text">Error: cannot communicate with vCenter</a></p>
+-->
+</div>
+<div class="ui-layout-west">
+  <div id="vmlist"><img src="images/loading-indic-16x16-00285f.gif"> Loading...</div>
+</div>
+<div class="ui-layout-south">
+  <div class="console-container">
+    <pre class="console" id="console1"><p>Console</p></pre>
+  </div>
+  <div class="console-controls"><span id="clearcons"></span><span id="cmdping"></span><span id="cmdstatus"></span></div>
+</div>
+<div id="dialog"></div>
+
+</body>
+</html>

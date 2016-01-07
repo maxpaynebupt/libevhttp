@@ -16,7 +16,7 @@
 #include "Request.h"
 #include "Response.h"
 #include "Process.h"
-#include "Config.h"
+#include "Conf.h"
 #include "HttpHandler.h"
 //#include "MessageListener.h"
 #include "SocketNIOReader.h"
@@ -101,8 +101,8 @@ public:
     HttpServer* httpServer;
     /** 指向主socket事件 */
     ev::io** evioSocket;
-    /** 指向Config */
-    Config* config;
+    /** 指向Conf */
+    Conf* conf;
     
 protected:
     /** 
