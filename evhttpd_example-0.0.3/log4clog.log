@@ -2409,3 +2409,574 @@
 2016-01-06 21:31:35:393.767[DEBUG]36633|41253056|HttpServletManager.cpp:45|freeQueue.size():0
 2016-01-06 21:31:35:395.249[DEBUG]36632|41253056|Dispatcher.cpp:80        |destroyedProcesses.size:2
 2016-01-06 21:31:35:395.560[DEBUG]36634|41253056|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-06 22:03:14:695.351[INFO ]40504|37349568|main.cpp:78              |Server started...
+2016-01-06 22:03:14:695.604[DEBUG]40504|37349568|Dispatcher.cpp:42        |n:2
+2016-01-06 22:03:14:695.830[DEBUG]40504|37349568|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-06 22:03:14:695.905[DEBUG]40504|37349568|SocketNIOReader.cpp:30   |fd is 10
+2016-01-06 22:03:14:695.972[DEBUG]40504|37349568|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-06 22:03:14:696.311[DEBUG]40504|37349568|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-06 22:03:14:696.389[DEBUG]40504|37349568|SocketNIOReader.cpp:30   |fd is 12
+2016-01-06 22:03:14:696.430[DEBUG]40504|37349568|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-06 22:03:14:696.588[DEBUG]40506|37349568|SocketNIOReader.cpp:30   |fd is 11
+2016-01-06 22:03:14:696.745[DEBUG]40506|37349568|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-06 22:03:14:696.781[DEBUG]40506|37349568|HttpProcess.cpp:206      |
+2016-01-06 22:03:14:696.820[DEBUG]40506|37349568|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-06 22:03:14:696.854[DEBUG]40506|37349568|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-06 22:03:14:696.893[DEBUG]40506|37349568|Process.cpp:41           |
+2016-01-06 22:03:14:697.195[DEBUG]40505|37349568|SocketNIOReader.cpp:30   |fd is 9
+2016-01-06 22:03:14:697.360[DEBUG]40505|37349568|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-06 22:03:14:697.398[DEBUG]40505|37349568|HttpProcess.cpp:206      |
+2016-01-06 22:03:14:697.433[DEBUG]40505|37349568|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-06 22:03:14:697.465[DEBUG]40505|37349568|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 05:58:26:273.128[INFO ]7927|23255232|main.cpp:78              |Server started...
+2016-01-09 05:58:26:312.947[DEBUG]7927|23255232|Dispatcher.cpp:42        |n:2
+2016-01-09 05:58:26:313.433[DEBUG]7927|23255232|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 05:58:26:313.491[DEBUG]7928|23255232|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 05:58:26:313.760[DEBUG]7928|23255232|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 05:58:26:313.808[DEBUG]7928|23255232|HttpProcess.cpp:206      |
+2016-01-09 05:58:26:313.843[DEBUG]7928|23255232|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 05:58:26:313.860[DEBUG]7928|23255232|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 05:58:26:313.981[DEBUG]7927|23255232|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 05:58:26:314.168[DEBUG]7927|23255232|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 05:58:26:314.522[DEBUG]7927|23255232|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 05:58:26:314.585[DEBUG]7929|23255232|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 05:58:26:314.703[DEBUG]7929|23255232|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 05:58:26:314.733[DEBUG]7929|23255232|HttpProcess.cpp:206      |
+2016-01-09 05:58:26:314.752[DEBUG]7929|23255232|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 05:58:26:314.768[DEBUG]7929|23255232|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 05:58:26:314.789[DEBUG]7929|23255232|Process.cpp:41           |
+2016-01-09 05:58:26:315.025[DEBUG]7927|23255232|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 05:58:26:315.193[DEBUG]7927|23255232|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 05:58:36:245.950[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 05:58:36:252.960[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:58:36:253.054[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:58:46:249.402[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 05:58:46:254.490[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:58:46:254.581[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:58:56:248.979[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 05:58:56:253.964[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:58:56:254.085[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:06:253.426[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:06:253.498[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:06:253.513[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 05:59:16:252.903[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:16:253.134[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:16:253.952[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 05:59:26:248.475[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 05:59:26:248.589[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:26:251.401[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:36:245.949[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:36:251.926[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:36:252.038[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 05:59:46:252.276[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 05:59:46:252.362[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:46:253.407[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:56:252.702[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 05:59:56:252.862[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 05:59:56:253.744[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:06:252.303[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:06:254.264[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:06:254.375[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:00:16:246.779[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:16:251.761[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:00:16:251.874[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:26:247.256[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:26:247.370[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:00:26:252.361[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:36:252.656[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:00:36:252.656[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:36:252.780[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:46:252.224[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:46:252.348[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:46:252.408[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:00:56:252.611[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:56:252.738[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:00:56:252.791[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:01:06:244.969[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:06:245.048[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:06:245.076[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:01:16:250.539[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:16:250.726[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:16:250.781[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:01:26:254.006[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:26:254.186[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:26:254.206[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:01:36:252.554[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:36:252.678[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:36:252.719[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:01:46:246.993[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:46:247.227[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:01:46:247.249[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:56:252.343[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:56:252.438[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:01:56:252.483[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:02:06:252.890[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:06:252.978[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:06:253.022[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:02:16:251.359[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:16:251.433[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:02:16:251.461[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:26:250.763[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:26:250.832[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:02:26:250.860[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:36:253.192[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:36:253.262[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:02:36:253.291[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:46:250.697[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:46:250.767[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:02:46:250.795[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:56:247.392[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:02:56:247.617[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:02:56:247.694[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:06:250.618[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:06:250.745[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:06:250.786[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:03:16:250.102[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:16:250.172[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:16:250.200[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:03:26:250.542[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:26:250.613[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:26:250.642[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:03:36:248.024[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:36:248.095[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:36:248.123[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:03:46:250.565[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:03:46:254.487[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:46:254.540[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:56:253.942[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:56:254.012[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:03:56:254.040[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:04:06:252.598[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:06:252.782[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:06:252.802[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:04:16:249.050[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:16:249.194[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:16:249.252[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:04:26:251.447[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:26:251.518[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:26:251.547[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:04:36:249.835[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:36:249.949[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:36:250.007[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:04:46:257.374[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:46:257.492[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:46:257.554[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:04:56:253.877[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:56:253.950[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:04:56:253.978[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:05:06:253.266[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:05:06:253.381[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:05:06:253.439[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:05:16:253.793[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:05:16:253.923[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:05:16:253.982[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:05:26:251.250[DEBUG]7928|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:05:26:251.555[DEBUG]7929|23255232|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:05:26:251.583[DEBUG]7927|23255232|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:27:08:563.369[INFO ]9188|13207744|main.cpp:79              |Server started...
+2016-01-09 06:27:08:563.495[DEBUG]9188|13207744|Dispatcher.cpp:42        |n:2
+2016-01-09 06:27:08:563.613[DEBUG]9188|13207744|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:27:08:563.678[DEBUG]9188|13207744|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:27:08:563.695[DEBUG]9188|13207744|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:27:08:563.702[DEBUG]9189|13207744|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:27:08:563.799[DEBUG]9189|13207744|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:27:08:563.815[DEBUG]9189|13207744|HttpProcess.cpp:206      |
+2016-01-09 06:27:08:563.810[DEBUG]9188|13207744|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:27:08:563.830[DEBUG]9189|13207744|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:27:08:563.844[DEBUG]9189|13207744|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:27:08:563.848[DEBUG]9188|13207744|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:27:08:563.869[DEBUG]9188|13207744|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:27:08:563.971[DEBUG]9190|13207744|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:27:08:564.039[DEBUG]9190|13207744|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:27:08:564.052[DEBUG]9190|13207744|HttpProcess.cpp:206      |
+2016-01-09 06:27:08:564.077[DEBUG]9190|13207744|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:27:08:564.089[DEBUG]9190|13207744|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:27:08:564.106[DEBUG]9190|13207744|Process.cpp:41           |
+2016-01-09 06:37:22:743.142[INFO ]10594|24496320|main.cpp:79              |Server started...
+2016-01-09 06:37:22:743.435[DEBUG]10594|24496320|Dispatcher.cpp:42        |n:2
+2016-01-09 06:37:22:743.676[DEBUG]10594|24496320|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:37:22:743.728[DEBUG]10595|24496320|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:37:22:743.857[DEBUG]10595|24496320|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:37:22:743.906[DEBUG]10595|24496320|HttpProcess.cpp:206      |
+2016-01-09 06:37:22:743.955[DEBUG]10595|24496320|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:37:22:743.977[DEBUG]10595|24496320|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:37:22:744.055[DEBUG]10594|24496320|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:37:22:744.118[DEBUG]10594|24496320|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:37:22:744.269[DEBUG]10594|24496320|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:37:22:744.325[DEBUG]10596|24496320|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:37:22:744.467[DEBUG]10594|24496320|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:37:22:744.505[DEBUG]10596|24496320|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:37:22:744.517[DEBUG]10594|24496320|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:37:22:744.528[DEBUG]10596|24496320|HttpProcess.cpp:206      |
+2016-01-09 06:37:22:744.639[INFO ]10594|24496320|HttpServer.cpp:124       |Listening on 24496280:3080
+2016-01-09 06:37:22:744.700[DEBUG]10596|24496320|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:37:22:744.754[DEBUG]10596|24496320|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:37:22:744.805[DEBUG]10596|24496320|Process.cpp:41           |
+2016-01-09 06:37:32:752.026[DEBUG]10595|24496320|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:37:32:752.027[DEBUG]10594|24496320|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:37:32:752.097[DEBUG]10596|24496320|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:38:45:157.163[INFO ]10678|31340736|main.cpp:79              |Server started...
+2016-01-09 06:38:45:157.278[DEBUG]10678|31340736|Dispatcher.cpp:42        |n:2
+2016-01-09 06:38:45:157.425[DEBUG]10678|31340736|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:38:45:157.459[DEBUG]10678|31340736|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:38:45:157.473[DEBUG]10678|31340736|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:38:45:157.486[DEBUG]10679|31340736|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:38:45:157.573[DEBUG]10679|31340736|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:38:45:157.572[DEBUG]10678|31340736|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:38:45:157.588[DEBUG]10679|31340736|HttpProcess.cpp:206      |
+2016-01-09 06:38:45:157.603[DEBUG]10679|31340736|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:38:45:157.602[DEBUG]10678|31340736|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:38:45:157.618[DEBUG]10679|31340736|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:38:45:157.620[DEBUG]10678|31340736|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:38:45:157.637[INFO ]10678|31340736|HttpServer.cpp:124       |Listening on 31340696:3080
+2016-01-09 06:38:45:157.722[DEBUG]10680|31340736|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:38:45:157.799[DEBUG]10680|31340736|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:38:45:157.815[DEBUG]10680|31340736|HttpProcess.cpp:206      |
+2016-01-09 06:38:45:157.833[DEBUG]10680|31340736|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:38:45:157.852[DEBUG]10680|31340736|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:38:45:157.874[DEBUG]10680|31340736|Process.cpp:41           |
+2016-01-09 06:40:04:994.376[INFO ]10684|8538304|main.cpp:79              |Server started...
+2016-01-09 06:41:29:493.166[DEBUG]10684|8538304|Dispatcher.cpp:42        |n:2
+2016-01-09 06:41:29:493.967[DEBUG]10684|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:41:29:494.063[DEBUG]10684|8538304|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:41:29:494.086[DEBUG]10684|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:41:29:494.229[DEBUG]10688|8538304|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:41:29:494.287[DEBUG]10688|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:41:29:494.299[DEBUG]10688|8538304|HttpProcess.cpp:206      |
+2016-01-09 06:41:29:494.330[DEBUG]10688|8538304|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:41:29:494.341[DEBUG]10688|8538304|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:41:29:494.601[DEBUG]10684|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:41:29:494.616[DEBUG]10689|8538304|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:41:29:494.645[DEBUG]10684|8538304|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:41:29:494.658[DEBUG]10684|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:41:29:494.662[DEBUG]10689|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:41:29:494.674[DEBUG]10689|8538304|HttpProcess.cpp:206      |
+2016-01-09 06:41:29:494.687[DEBUG]10689|8538304|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:41:29:494.698[DEBUG]10689|8538304|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:41:29:494.713[DEBUG]10689|8538304|Process.cpp:41           |
+2016-01-09 06:41:29:495.439[DEBUG]10688|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:41:29:496.081[DEBUG]10689|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:41:29:497.136[DEBUG]10688|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:41:29:497.352[DEBUG]10689|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:41:30:932.364[INFO ]10684|8538304|HttpServer.cpp:124       |Listening on 8538264:3080
+2016-01-09 06:41:39:497.606[DEBUG]10689|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:41:39:503.880[DEBUG]10688|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:41:49:496.028[DEBUG]10688|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:41:49:501.101[DEBUG]10689|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:41:57:526.339[DEBUG]10689|8538304|EvNIOReader.cpp:97       |isClosed():0, entryQueue.size():1
+2016-01-09 06:41:57:526.402[DEBUG]10688|8538304|EvNIOReader.cpp:97       |isClosed():0, entryQueue.size():1
+2016-01-09 06:41:57:526.441[DEBUG]10688|8538304|SocketNIOReader.cpp:22   |fd is 9
+2016-01-09 06:41:57:526.454[DEBUG]10688|8538304|SocketNIOReader.cpp:24   |rsize is 0
+2016-01-09 06:41:57:526.456[DEBUG]10689|8538304|SocketNIOReader.cpp:22   |fd is 11
+2016-01-09 06:41:57:526.463[DEBUG]10688|8538304|EvNIOReader.cpp:112      |rsize:0
+2016-01-09 06:41:57:526.473[DEBUG]10688|8538304|EvNIOReader.cpp:121      |errno:0, rsize:
+2016-01-09 06:41:57:526.484[DEBUG]10688|8538304|Process.cpp:172          |childProcess:1
+2016-01-09 06:41:57:526.493[DEBUG]10688|8538304|Process.cpp:364          |readsize:0, msgExist:0
+2016-01-09 06:41:57:526.503[DEBUG]10688|8538304|HttpProcess.cpp:256      |succeed:0, childProcess:1
+2016-01-09 06:41:57:526.504[DEBUG]10689|8538304|SocketNIOReader.cpp:24   |rsize is 0
+2016-01-09 06:41:57:526.513[DEBUG]10688|8538304|HttpProcess.cpp:258      |succeed:0, childProcess:1
+2016-01-09 06:41:57:526.526[DEBUG]10688|8538304|HttpProcess.cpp:86       |childProcess:1
+2016-01-09 06:41:57:526.529[DEBUG]10689|8538304|EvNIOReader.cpp:112      |rsize:0
+2016-01-09 06:41:57:526.536[DEBUG]10688|8538304|HttpHandlerManager.cpp:67|AllCount:0
+2016-01-09 06:41:57:526.541[DEBUG]10689|8538304|EvNIOReader.cpp:121      |errno:0, rsize:
+2016-01-09 06:41:57:526.551[DEBUG]10689|8538304|Process.cpp:172          |childProcess:1
+2016-01-09 06:41:57:526.561[DEBUG]10689|8538304|Process.cpp:364          |readsize:0, msgExist:0
+2016-01-09 06:41:57:526.570[DEBUG]10689|8538304|HttpProcess.cpp:256      |succeed:0, childProcess:1
+2016-01-09 06:41:57:526.579[DEBUG]10689|8538304|HttpProcess.cpp:258      |succeed:0, childProcess:1
+2016-01-09 06:41:57:526.588[DEBUG]10689|8538304|HttpProcess.cpp:86       |childProcess:1
+2016-01-09 06:41:57:526.597[DEBUG]10689|8538304|HttpHandlerManager.cpp:67|AllCount:0
+2016-01-09 06:41:57:532.893[INFO ]10695|8538304|main.cpp:79              |Server started...
+2016-01-09 06:42:15:252.622[DEBUG]10695|8538304|Dispatcher.cpp:42        |n:2
+2016-01-09 06:42:15:253.328[DEBUG]10695|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:15:253.646[DEBUG]10695|8538304|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:42:15:253.678[DEBUG]10695|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:15:253.937[DEBUG]10696|8538304|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:42:15:254.158[DEBUG]10696|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:15:254.404[DEBUG]10696|8538304|HttpProcess.cpp:206      |
+2016-01-09 06:42:15:254.600[DEBUG]10696|8538304|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:42:15:254.789[DEBUG]10696|8538304|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:42:15:255.262[DEBUG]10695|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:15:255.309[DEBUG]10695|8538304|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:42:15:255.331[DEBUG]10695|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:15:255.508[DEBUG]10697|8538304|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:42:15:255.717[DEBUG]10697|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:15:255.869[DEBUG]10697|8538304|HttpProcess.cpp:206      |
+2016-01-09 06:42:15:256.264[DEBUG]10696|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:15:256.443[DEBUG]10697|8538304|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:42:15:256.602[DEBUG]10697|8538304|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:42:15:256.761[DEBUG]10697|8538304|Process.cpp:41           |
+2016-01-09 06:42:15:258.233[DEBUG]10697|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:17:534.445[DEBUG]10696|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:17:534.514[DEBUG]10697|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:19:161.172[INFO ]10695|8538304|HttpServer.cpp:124       |Listening on 8538264:3080
+2016-01-09 06:42:27:538.931[DEBUG]10696|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:27:538.998[DEBUG]10697|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:29:844.001[DEBUG]10696|8538304|EvNIOReader.cpp:97       |isClosed():0, entryQueue.size():1
+2016-01-09 06:42:29:844.086[DEBUG]10697|8538304|EvNIOReader.cpp:97       |isClosed():0, entryQueue.size():1
+2016-01-09 06:42:29:844.118[DEBUG]10697|8538304|SocketNIOReader.cpp:22   |fd is 11
+2016-01-09 06:42:29:844.132[DEBUG]10696|8538304|SocketNIOReader.cpp:22   |fd is 9
+2016-01-09 06:42:29:844.148[DEBUG]10697|8538304|SocketNIOReader.cpp:24   |rsize is 0
+2016-01-09 06:42:29:844.168[DEBUG]10696|8538304|SocketNIOReader.cpp:24   |rsize is 0
+2016-01-09 06:42:29:844.192[DEBUG]10697|8538304|EvNIOReader.cpp:112      |rsize:0
+2016-01-09 06:42:29:844.210[DEBUG]10696|8538304|EvNIOReader.cpp:112      |rsize:0
+2016-01-09 06:42:29:844.224[DEBUG]10696|8538304|EvNIOReader.cpp:121      |errno:0, rsize:
+2016-01-09 06:42:29:844.243[DEBUG]10697|8538304|EvNIOReader.cpp:121      |errno:0, rsize:
+2016-01-09 06:42:29:844.257[DEBUG]10696|8538304|Process.cpp:172          |childProcess:1
+2016-01-09 06:42:29:844.271[DEBUG]10697|8538304|Process.cpp:172          |childProcess:1
+2016-01-09 06:42:29:844.290[DEBUG]10696|8538304|Process.cpp:364          |readsize:0, msgExist:0
+2016-01-09 06:42:29:844.303[DEBUG]10697|8538304|Process.cpp:364          |readsize:0, msgExist:0
+2016-01-09 06:42:29:844.331[DEBUG]10696|8538304|HttpProcess.cpp:256      |succeed:0, childProcess:1
+2016-01-09 06:42:29:844.349[DEBUG]10696|8538304|HttpProcess.cpp:258      |succeed:0, childProcess:1
+2016-01-09 06:42:29:844.363[DEBUG]10697|8538304|HttpProcess.cpp:256      |succeed:0, childProcess:1
+2016-01-09 06:42:29:844.392[DEBUG]10696|8538304|HttpProcess.cpp:86       |childProcess:1
+2016-01-09 06:42:29:844.415[DEBUG]10697|8538304|HttpProcess.cpp:258      |succeed:0, childProcess:1
+2016-01-09 06:42:29:844.444[DEBUG]10696|8538304|HttpHandlerManager.cpp:67|AllCount:0
+2016-01-09 06:42:29:844.470[DEBUG]10697|8538304|HttpProcess.cpp:86       |childProcess:1
+2016-01-09 06:42:29:844.497[DEBUG]10697|8538304|HttpHandlerManager.cpp:67|AllCount:0
+2016-01-09 06:42:29:851.021[INFO ]10698|8538304|main.cpp:79              |Server started...
+2016-01-09 06:42:47:472.494[DEBUG]10698|8538304|Dispatcher.cpp:42        |n:2
+2016-01-09 06:42:47:472.870[DEBUG]10698|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:47:472.934[DEBUG]10698|8538304|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:42:47:472.969[DEBUG]10698|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:47:473.145[DEBUG]10700|8538304|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:42:47:473.315[DEBUG]10698|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:47:473.321[DEBUG]10701|8538304|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:42:47:473.551[DEBUG]10698|8538304|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:42:47:473.577[DEBUG]10701|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:47:473.589[DEBUG]10698|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:47:473.608[DEBUG]10701|8538304|HttpProcess.cpp:206      |
+2016-01-09 06:42:47:473.622[DEBUG]10701|8538304|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:42:47:473.634[DEBUG]10701|8538304|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:42:47:473.653[DEBUG]10701|8538304|Process.cpp:41           |
+2016-01-09 06:42:47:474.240[DEBUG]10700|8538304|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:42:47:474.392[DEBUG]10700|8538304|HttpProcess.cpp:206      |
+2016-01-09 06:42:47:474.428[DEBUG]10700|8538304|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:42:47:474.445[DEBUG]10700|8538304|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:42:47:474.839[DEBUG]10701|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:47:475.768[DEBUG]10700|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:49:852.947[DEBUG]10700|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:49:852.959[DEBUG]10701|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:50:523.016[INFO ]10698|8538304|HttpServer.cpp:124       |Listening on 8538264:3080
+2016-01-09 06:42:50:524.956[DEBUG]10698|8538304|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:42:50:526.892[DEBUG]10698|8538304|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:42:59:856.419[DEBUG]10700|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:42:59:857.351[DEBUG]10701|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:43:00:526.566[DEBUG]10698|8538304|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:43:09:859.929[DEBUG]10700|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:43:09:859.939[DEBUG]10701|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:43:10:525.945[DEBUG]10698|8538304|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:43:19:855.405[DEBUG]10701|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:43:19:858.465[DEBUG]10700|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:43:20:526.434[DEBUG]10698|8538304|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:43:29:853.862[DEBUG]10700|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:43:29:860.926[DEBUG]10701|8538304|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:43:34:485.718[INFO ]10702|8538304|main.cpp:79              |Server started...
+2016-01-09 06:47:06:832.266[INFO ]10783|39577792|main.cpp:79              |Server started...
+2016-01-09 06:47:06:832.392[DEBUG]10783|39577792|Dispatcher.cpp:42        |n:2
+2016-01-09 06:47:06:832.512[DEBUG]10783|39577792|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:47:06:832.553[DEBUG]10783|39577792|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:47:06:832.569[DEBUG]10783|39577792|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:47:06:832.583[DEBUG]10784|39577792|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:47:06:832.656[DEBUG]10783|39577792|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:47:06:832.667[DEBUG]10784|39577792|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:47:06:832.682[DEBUG]10784|39577792|HttpProcess.cpp:206      |
+2016-01-09 06:47:06:832.687[DEBUG]10783|39577792|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:47:06:832.697[DEBUG]10784|39577792|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:47:06:832.704[DEBUG]10783|39577792|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:47:06:832.726[DEBUG]10784|39577792|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:47:06:832.737[INFO ]10783|39577792|HttpServer.cpp:124       |Listening on 39577752:3080
+2016-01-09 06:47:06:832.832[DEBUG]10785|39577792|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:47:06:832.938[DEBUG]10785|39577792|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:47:06:832.962[DEBUG]10785|39577792|HttpProcess.cpp:206      |
+2016-01-09 06:47:06:832.975[DEBUG]10785|39577792|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:47:06:832.985[DEBUG]10785|39577792|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:47:06:833.000[DEBUG]10785|39577792|Process.cpp:41           |
+2016-01-09 06:48:10:930.409[INFO ]10828|38836416|main.cpp:79              |Server started...
+2016-01-09 06:48:10:930.537[DEBUG]10828|38836416|Dispatcher.cpp:42        |n:2
+2016-01-09 06:48:10:930.657[DEBUG]10828|38836416|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:10:930.691[DEBUG]10828|38836416|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:48:10:930.705[DEBUG]10828|38836416|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:10:930.723[DEBUG]10829|38836416|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:48:10:930.808[DEBUG]10829|38836416|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:10:930.803[DEBUG]10828|38836416|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:10:930.823[DEBUG]10829|38836416|HttpProcess.cpp:206      |
+2016-01-09 06:48:10:930.835[DEBUG]10828|38836416|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:48:10:930.837[DEBUG]10829|38836416|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:48:10:930.852[DEBUG]10828|38836416|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:10:930.855[DEBUG]10829|38836416|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:48:10:930.867[INFO ]10828|38836416|HttpServer.cpp:124       |Listening on 38836376:3081
+2016-01-09 06:48:10:931.405[DEBUG]10830|38836416|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:48:10:933.781[DEBUG]10830|38836416|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:10:933.865[DEBUG]10830|38836416|HttpProcess.cpp:206      |
+2016-01-09 06:48:10:933.915[DEBUG]10830|38836416|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:48:10:933.986[DEBUG]10830|38836416|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:48:10:934.029[DEBUG]10830|38836416|Process.cpp:41           |
+2016-01-09 06:48:24:960.978[INFO ]10831|12871872|main.cpp:79              |Server started...
+2016-01-09 06:48:24:961.128[DEBUG]10831|12871872|Dispatcher.cpp:42        |n:2
+2016-01-09 06:48:24:961.361[DEBUG]10831|12871872|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:24:961.410[DEBUG]10831|12871872|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:48:24:961.429[DEBUG]10831|12871872|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:24:961.442[DEBUG]10832|12871872|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:48:24:961.581[DEBUG]10832|12871872|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:24:961.581[DEBUG]10831|12871872|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:24:961.601[DEBUG]10832|12871872|HttpProcess.cpp:206      |
+2016-01-09 06:48:24:961.619[DEBUG]10832|12871872|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:48:24:961.619[DEBUG]10831|12871872|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:48:24:961.634[DEBUG]10832|12871872|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:48:24:961.639[DEBUG]10831|12871872|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:24:961.661[INFO ]10831|12871872|HttpServer.cpp:124       |Listening on 12871832:3081
+2016-01-09 06:48:24:961.784[DEBUG]10833|12871872|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:48:24:961.895[DEBUG]10833|12871872|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:48:24:961.950[DEBUG]10833|12871872|HttpProcess.cpp:206      |
+2016-01-09 06:48:24:961.974[DEBUG]10833|12871872|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:48:24:961.992[DEBUG]10833|12871872|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:48:24:962.103[DEBUG]10833|12871872|Process.cpp:41           |
+2016-01-09 06:48:34:965.205[DEBUG]10831|12871872|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:48:34:969.066[DEBUG]10832|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:48:34:969.123[DEBUG]10833|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:48:44:970.677[DEBUG]10832|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:48:44:970.746[DEBUG]10833|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:48:44:970.753[DEBUG]10831|12871872|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:48:54:969.116[DEBUG]10831|12871872|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:48:54:969.111[DEBUG]10833|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:48:54:969.176[DEBUG]10832|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:49:04:961.708[DEBUG]10832|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:49:04:969.549[DEBUG]10831|12871872|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:49:04:969.619[DEBUG]10833|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:49:14:964.086[DEBUG]10833|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:49:14:964.157[DEBUG]10831|12871872|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:49:14:970.096[DEBUG]10832|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:49:24:967.479[DEBUG]10833|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:49:24:969.444[DEBUG]10832|12871872|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:49:24:969.486[DEBUG]10831|12871872|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:51:22:668.811[INFO ]11095|31058112|main.cpp:79              |Server started...
+2016-01-09 06:51:22:669.246[DEBUG]11095|31058112|Dispatcher.cpp:42        |n:2
+2016-01-09 06:51:22:669.576[DEBUG]11095|31058112|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:51:22:669.623[DEBUG]11096|31058112|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:51:22:669.729[DEBUG]11096|31058112|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:51:22:669.750[DEBUG]11096|31058112|HttpProcess.cpp:206      |
+2016-01-09 06:51:22:669.769[DEBUG]11096|31058112|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:51:22:669.786[DEBUG]11096|31058112|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:51:22:669.970[DEBUG]11095|31058112|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:51:22:670.286[DEBUG]11095|31058112|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:51:22:670.588[DEBUG]11095|31058112|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:51:22:670.641[DEBUG]11097|31058112|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:51:22:670.748[DEBUG]11097|31058112|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:51:22:670.770[DEBUG]11097|31058112|HttpProcess.cpp:206      |
+2016-01-09 06:51:22:670.790[DEBUG]11097|31058112|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:51:22:670.806[DEBUG]11097|31058112|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:51:22:670.825[DEBUG]11097|31058112|Process.cpp:41           |
+2016-01-09 06:51:22:670.977[DEBUG]11095|31058112|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:51:22:671.163[DEBUG]11095|31058112|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:51:22:671.333[INFO ]11095|31058112|HttpServer.cpp:124       |Listening on 0.0.0.0:3081
+2016-01-09 06:51:32:673.581[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:51:32:676.650[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:51:32:676.774[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:51:42:672.012[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:51:42:672.099[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:51:42:675.032[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:51:52:678.424[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:51:52:678.496[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:51:52:678.524[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:52:02:677.928[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:02:678.000[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:52:02:678.028[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:12:677.326[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:12:677.361[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:12:677.405[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:52:22:673.830[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:22:673.841[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:52:22:673.903[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:32:676.344[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:32:678.741[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:32:678.802[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:52:42:672.735[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:42:677.864[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:52:42:678.066[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:52:676.248[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:52:52:676.321[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:52:52:676.576[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:53:02:671.670[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:53:02:676.710[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:53:02:676.780[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:53:12:673.233[DEBUG]11096|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:53:12:678.092[DEBUG]11097|31058112|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 06:53:12:678.319[DEBUG]11095|31058112|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 06:54:07:348.303[DEBUG]11141|12785856|Dispatcher.cpp:42        |n:2
+2016-01-09 06:54:07:348.957[DEBUG]11141|12785856|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:54:07:348.920[DEBUG]11142|12785856|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 06:54:07:349.163[DEBUG]11142|12785856|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:54:07:349.211[DEBUG]11142|12785856|HttpProcess.cpp:206      |
+2016-01-09 06:54:07:349.256[DEBUG]11142|12785856|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 06:54:07:349.298[DEBUG]11142|12785856|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 06:54:07:349.402[DEBUG]11141|12785856|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 06:54:07:349.549[DEBUG]11141|12785856|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:54:07:349.801[DEBUG]11141|12785856|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:54:07:349.879[DEBUG]11143|12785856|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 06:54:07:349.971[DEBUG]11141|12785856|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 06:54:07:350.025[DEBUG]11143|12785856|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:54:07:350.120[DEBUG]11143|12785856|HttpProcess.cpp:206      |
+2016-01-09 06:54:07:350.165[DEBUG]11143|12785856|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 06:54:07:350.184[DEBUG]11143|12785856|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 06:54:07:350.248[DEBUG]11143|12785856|Process.cpp:41           |
+2016-01-09 06:54:07:350.464[DEBUG]11141|12785856|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 06:54:07:350.629[INFO ]11141|12785856|HttpServer.cpp:124       |Listening on 0.0.0.0:3081
+2016-01-09 06:54:44:215.733[INFO ]11145|15452352|HttpServer.cpp:124       |Listening on 0.0.0.0:3081
+2016-01-09 20:20:44:954.032[DEBUG]11932|36092096|Dispatcher.cpp:42        |n:2
+2016-01-09 20:20:44:954.482[DEBUG]11932|36092096|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 20:20:44:954.554[DEBUG]11933|36092096|SocketNIOReader.cpp:30   |fd is 9
+2016-01-09 20:20:44:954.699[DEBUG]11932|36092096|SocketNIOReader.cpp:30   |fd is 10
+2016-01-09 20:20:44:954.872[DEBUG]11932|36092096|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 20:20:44:955.088[DEBUG]11933|36092096|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 20:20:44:955.115[DEBUG]11933|36092096|HttpProcess.cpp:206      |
+2016-01-09 20:20:44:955.133[DEBUG]11933|36092096|HttpProcess.cpp:218      |dispatcher.processesCount():0
+2016-01-09 20:20:44:955.148[DEBUG]11933|36092096|Dispatcher.cpp:177       |allProcesses.size:0
+2016-01-09 20:20:44:955.226[DEBUG]11932|36092096|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 20:20:44:955.274[DEBUG]11932|36092096|SocketNIOReader.cpp:30   |fd is 12
+2016-01-09 20:20:44:955.301[DEBUG]11932|36092096|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 20:20:44:955.322[INFO ]11932|36092096|HttpServer.cpp:124       |Listening on 0.0.0.0:3081
+2016-01-09 20:20:44:955.468[DEBUG]11934|36092096|SocketNIOReader.cpp:30   |fd is 11
+2016-01-09 20:20:44:955.557[DEBUG]11934|36092096|EvNIOWriter.cpp:48       |isRunning:false
+2016-01-09 20:20:44:955.576[DEBUG]11934|36092096|HttpProcess.cpp:206      |
+2016-01-09 20:20:44:955.594[DEBUG]11934|36092096|HttpProcess.cpp:218      |dispatcher.processesCount():1
+2016-01-09 20:20:44:955.621[DEBUG]11934|36092096|Dispatcher.cpp:177       |allProcesses.size:1
+2016-01-09 20:20:44:955.656[DEBUG]11934|36092096|Process.cpp:41           |
+2016-01-09 20:20:54:963.239[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:20:54:963.237[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:20:54:963.493[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:04:962.745[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:21:04:962.815[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:04:962.842[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:14:957.123[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:21:14:957.194[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:14:957.221[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:24:958.657[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:21:24:958.727[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:24:958.754[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:34:962.145[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:34:962.217[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:34:964.070[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:21:44:955.516[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:21:44:955.588[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:44:955.616[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:54:964.075[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:21:54:964.164[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:21:54:964.192[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:04:962.551[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:22:04:962.623[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:04:962.650[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:14:963.935[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:22:14:964.007[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:14:964.034[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:24:955.482[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:22:24:955.550[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:24:955.577[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:34:963.993[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:22:34:964.061[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:34:964.088[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:44:963.467[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:22:44:963.649[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:44:963.712[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:54:961.830[DEBUG]11933|36092096|HttpServletManager.cpp:45|freeQueue.size():0
+2016-01-09 20:22:54:964.034[DEBUG]11932|36092096|Dispatcher.cpp:80        |destroyedProcesses.size:2
+2016-01-09 20:22:54:964.102[DEBUG]11934|36092096|HttpServletManager.cpp:45|freeQueue.size():0

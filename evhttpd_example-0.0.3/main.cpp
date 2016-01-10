@@ -8,18 +8,16 @@
 #include <evhttp/HttpServer.h>
 #include <evhttp/Conf.h>
 #include <evhttp/HttpServletFactory.h>
+#include <cfgparser.h>
+#include <configwrapper.h>
 
 #include "HelloHttpServlet.h"
 #include "ReadFormBodyHttpServlet.h"
 #include "SendfileIOPumpHttpServlet.h"
 #include "RWIOPumpHttpServlet.h"
 #include "FileServerHttpServlet.h"
-#include "cfgparser.h"
-#include "configwrapper.h"
 
 
-#define SERVER_PORT 3080
-#define LOG_LEVEL LOG_DEBUG_LEVEL
 
 class TestHttpServletFactory : public HttpServletFactory{
 public:
@@ -58,28 +56,24 @@ public:
 
 int main(int argc, char** argv) {
     ConfigParser_t cfg;
-    if (cfg.readFile("evhttpd.cfg"))
+    if (cfg.readFile("evhttpd.conf"))
     {
-        printf("Error: Cannot open config file 'evhttpd.cfg'\n");
+        printf("Error: Cannot open config file 'evhttpd.conf'\n");
         return 1;
     }
 
     ConfigWrapper_t cfgWrapper(cfg);
-    int workProcessCount=1;
-    string log4cpluscfg="";
-    cfgWrapper.getInt("default","workProcessCount",workProcessCount);
-    cfgWrapper.getString("default","log4cpluscfg",log4cpluscfg);
-
     Conf conf;
-    conf.workProcessCount = workProcessCount;
-    conf.log4cpluscfg = log4cpluscfg;
-    conf.initLog();
 
-    LOG_INFO("Server started...");
+    cfgWrapper.getInt("default","workProcessCount",conf.workProcessCount);
+    cfgWrapper.getString("default","log4cpluscfg",conf.log4cpluscfg);
+    cfgWrapper.getInt("default","listenport",conf.listenport);
+
+    conf.initLog();
  
     //配置HttpServer
     TestHttpServletFactory servletFactory;
-    HttpServer httpServer(SERVER_PORT, &servletFactory, &conf);
+    HttpServer httpServer(conf.listenport, &servletFactory, &conf);
     
     //启动HttpServer
     if(!httpServer.start()){

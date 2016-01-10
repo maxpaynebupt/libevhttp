@@ -10,6 +10,7 @@
 #include <arpa/inet.h>
 #include <errno.h>
 #include <iostream>
+#include "logger.h"
 
 using namespace std;
 
@@ -120,6 +121,7 @@ bool HttpServer::start(){
         LOG_ERROR("start dispatcher failure, errno:%d", errno);
         return false;
     }
+    LOG_INFO("Listening on %s:%d",inet_ntoa(address->sin_addr),ntohs(address->sin_port));
 
     return true;
 }

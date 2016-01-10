@@ -46,6 +46,9 @@ public:
 
     /** log config file**/
     string log4cpluscfg;
+
+   /* Server port */
+   int listenport;
      
 public:
     Conf():
@@ -57,7 +60,8 @@ public:
         poolMaxHttpHandlerCount(POOL_MAX_HTTP_HANDLER_COUNT),
         handlerFactory(NULL),
         eventListener(NULL),
-        log4cpluscfg("")
+        log4cpluscfg(""),
+        listenport(3080)
     {}
 
     void initLog(){
