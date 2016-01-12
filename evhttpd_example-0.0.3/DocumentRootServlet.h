@@ -1,12 +1,12 @@
 /* 
- * File:   FileServerHttpServlet.h
+ * File:   DocumentRootServlet.h
  * Author: try
  *
  * Created on 2012年3月31日
  */
 
-#ifndef FileServerHttpServlet_H
-#define	FileServerHttpServlet_H
+#ifndef DocumentRootServlet_H
+#define	DocumentRootServlet_H
 
 #include <fcntl.h>
 #include <sys/stat.h>
@@ -15,21 +15,23 @@
 #include <errno.h>
 #include <evhttp/HttpServlet.h>
 
-
 #define SEND_SIZE 1024*512
 
 
 /**
- * 测试通过Response.sendfile发送文件
  * 
  * http://192.168.99.60:3080/file/root/flvs/1.flv?speed=1048576&offset=0&length=0
  */
-class FileServerHttpServlet : public HttpServlet{
+typedef std::map<string,int> FdMap;
+class DocumentRootServlet : public HttpServlet{
+private:
+    int filefd;
+    static FdMap fdmap;
 public:
-    FileServerHttpServlet():flvfd(-1){
+    DocumentRootServlet():filefd(-1){
         LOG_INFO("");
     }
-    virtual ~FileServerHttpServlet(){
+    virtual ~DocumentRootServlet(){
         //LOG_INFO("");
         close();
     }
@@ -63,39 +65,68 @@ public:
         }          
         
         //取文件路径，去掉URL根位置部分
-        const char* flvfile = req.path+6; //去掉/flv部份前缀
-        if(!flvfile){
-            LOG_WARN("file name error, flvfile:%s", flvfile);
+        LOG_INFO("req.path=%s",req.path);
+        char *file;
+        if(strcmp(req.path,"/")==0){
+            file=(char*)malloc(strlen("www")+strlen(req.path)+strlen("index.html"));
+            memset(file,'\0',4);
+            strcat(file,"www");
+            strcat(file,req.path);
+            strcat(file,"index.html");
+        }else{
+            file=(char*)malloc(strlen("www")+strlen(req.path));
+            memset(file,'\0',4);
+            strcat(file,"www");
+            strcat(file,req.path);
+        }
+
+        LOG_INFO("file=%s",file);
+        
+   
+        if(!file){
+            LOG_WARN("file name error, file:%s", file);
             resp.setStatus(400, "error");
+            free(file);
             return;
         }
         
         //取文件信息
         struct stat filestat;
-        if(stat(flvfile, &filestat)!=0){
-            LOG_WARN("file %s not exist! errno:%d",flvfile, errno);
+        if(stat(file, &filestat)!=0){
+            LOG_WARN("file %s not exist! errno:%d",file, errno);
             resp.setStatus(400, "file not exist");
+            free(file);
             return;
         }
         if(S_ISDIR(filestat.st_mode)){
             LOG_WARN("is dir");
             resp.setStatus(400, "error, is dir");
+            free(file);
             return;
         }
         
         //打开文件
-        flvfd = ::open(flvfile, O_RDONLY | O_NONBLOCK);
-        if(flvfd < 0){
-            LOG_WARN("open file error, errno:%d", errno);
-            resp.setStatus(400, "open file error");
-            return;
+        if(fdmap.find(file)!=fdmap.end()){
+            filefd=fdmap[file];
+        }else{
+            filefd = ::open(file, O_RDONLY | O_NONBLOCK);
+            if(filefd < 0){
+                LOG_WARN("open file error, errno:%d", errno);
+                resp.setStatus(400, "open file error");
+                free(file);
+                return;
+            }else{
+                fdmap[file]=filefd;
+           // LOG_INFO("File in map %s:%d",file,fdmap[file]);
+            //LOG_INFO("fdmap.size=%d",fdmap.size());
+            }
         }
         
-        if(isSuffix(flvfile, ".flv")){
+        if(isSuffix(file, ".flv")){
             resp.setContentType("video/x-flv");
-        }else if(isSuffix(flvfile, ".html") || isSuffix(flvfile, ".htm")){
+        }else if(isSuffix(file, ".html") || isSuffix(file, ".htm")){
             resp.setContentType("text/html; charset=utf-8");
-        }else if(isSuffix(flvfile, ".txt") || isSuffix(flvfile, ".js")){
+        }else if(isSuffix(file, ".txt") || isSuffix(file, ".js")){
             resp.setContentType("text/plain; charset=utf-8");
         }else{
             resp.setContentType("application/x-msdownload");
@@ -111,8 +142,9 @@ public:
         }
         resp.setContentLength(lengthval); //如果想以Chunked方式传输文件，可以不设置内容长度
         
-        LOG_INFO("sendfile %s", flvfile);
-        resp.sendfile(flvfd, offsetval, lengthval, speedval, SEND_SIZE);
+        LOG_INFO("sendfile %s", file);
+        resp.sendfile(filefd, offsetval, lengthval, speedval, SEND_SIZE);
+        free(file);
         
     }
     
@@ -130,15 +162,15 @@ private:
     }
     
     void close(){
-        if(flvfd > 0){
-          ::close(flvfd);
-          flvfd = -1;
+        if(filefd > 0){
+          ::close(filefd);
+          filefd = -1;
         }
     }    
     
-private:
-    int flvfd;
 };
 
-#endif	/* FileServerHttpServlet_H */
+FdMap DocumentRootServlet::fdmap;
+
+#endif	/* DocumentRootServlet_H */
 

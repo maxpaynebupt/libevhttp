@@ -61,7 +61,7 @@ public:
         handlerFactory(NULL),
         eventListener(NULL),
         log4cpluscfg(""),
-        listenport(3080)
+        listenport(80)
     {}
 
     void initLog(){

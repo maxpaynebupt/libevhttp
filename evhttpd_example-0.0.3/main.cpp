@@ -16,6 +16,7 @@
 #include "SendfileIOPumpHttpServlet.h"
 #include "RWIOPumpHttpServlet.h"
 #include "FileServerHttpServlet.h"
+#include "DocumentRootServlet.h"
 
 
 
@@ -42,6 +43,8 @@ public:
         }else if(strncmp(path, "/file/", 6) == 0){
             return new FileServerHttpServlet();
             
+        }else{
+            return new DocumentRootServlet();
         }
         
         return new HelloHttpServlet();
